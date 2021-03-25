@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\AVAG\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\AVAG\\.nuget\\packages"
-    ]
-  }
-}
