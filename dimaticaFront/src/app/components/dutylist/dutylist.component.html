@@ -1,0 +1,27 @@
+<div class="container">
+    <h2>Duty List</h2>
+    <div style="margin:20px"class="row">
+        <div class="col-11">
+            <input   placeholder="write a new duty" type="text" class="form-control" [(ngModel)]="newDuty"/>
+        </div>
+        <div class="col-1">
+            <button type="button" (click)="Create()" class="btn btn-success">Create</button>
+        </div>
+    </div>
+    
+    <ul class="list-group">
+
+    <li class="list-group-item" *ngFor="let item of listDuties">
+        <div style="margin:20px"class="row">
+            <div class="col-9">
+                <input   placeholder="Write a new duty" type="text" class="form-control" [(ngModel)]="item.name"/>
+            </div>
+            <div class="col-3">
+                <button type="button" (click)="Delete(item.id)" class="float-right btn btn-danger">Delete</button>
+                <button type="button" (click)="Edit(item.id, item)" class="float-right btn btn-primary">Edit</button>
+            </div>
+            
+        </div>
+    </li>
+    </ul>
+  </div>
